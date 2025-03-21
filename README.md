@@ -4,19 +4,19 @@ A Python-based Prometheus exporter for monitoring Netgear modem metrics. This ex
 This project was inspired by @tylxr59's netgear_cm_exporter ([https://github.com/ickymettle/netgear_cm_exporter](https://github.com/tylxr59/Netgear-Modem-Prometheus-Exporter))
 
 # Officially Supported Modems
-    * Netgear CM2000
+ • Netgear CM2000
 
 # Features
-    * Scrapes modem information such as vendor, model, hardware version, serial number, MAC address, firmware version, and IPv4 address.
-    * Monitors downstream and upstream channel statistics including frequency, power, SNR, and symbol rate.
-    * Periodically updates metrics and exposes them to Prometheus.
+ • Scrapes modem information such as vendor, model, hardware version, serial number, MAC address, firmware version, and IPv4 address.
+ • Monitors downstream and upstream channel statistics including frequency, power, SNR, and symbol rate.
+ • Periodically updates metrics and exposes them to Prometheus.
 
 # Requirements
-    * Python 3.x
-    * requests
-    * prometheus_client
-    * time
-    * re
+ • Python 3.x
+ • requests
+ • prometheus_client
+ • time
+ • re
 
 # Installation
 1. Clone the repository: 
@@ -25,7 +25,7 @@ This project was inspired by @tylxr59's netgear_cm_exporter ([https://github.com
 2. cd Netgear-CM2000-Prometheus-Exporter
 
 3. Install required Python requirements
-   pip install prometheus_client requests
+   pip install prometheus_client requests time re
 
 4. Install the service files
 ```   
