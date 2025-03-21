@@ -1,7 +1,7 @@
 # Netgear-CM2000-Prometheus-Exporter
 A Python-based Prometheus exporter for monitoring Netgear modem metrics. This exporter scrapes data from the modem's web interface and exposes it as Prometheus metrics. Includes a premade Grafana dashboard
 
-This project was inspired by @tylxr59's netgear_cm_exporter ([https://github.com/ickymettle/netgear_cm_exporter](https://github.com/tylxr59/Netgear-Modem-Prometheus-Exporter))
+This project was inspired by @tylxr59's netgear_cm_exporter ([https://github.com/tylerx59/Netgear-Modem-Prometheus-Exporter](https://github.com/tylxr59/Netgear-Modem-Prometheus-Exporter))
 
 # Officially Supported Modems
  • Netgear CM2000
