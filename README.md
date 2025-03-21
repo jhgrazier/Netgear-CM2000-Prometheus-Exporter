@@ -37,12 +37,12 @@ Edit the netgear-exporter.py to adjust the password.
 # Prometheus Configuration
 Add the following job to your Prometheus configuration (adjust localhost to the correct IP if they are not running on the same machine):
 
-'''
+```
 scrape_configs:
   - job_name: 'netgear_modem'
     static_configs:
       - targets: ['localhost:8000']
-'''
+```
 
 # Final Configuration
 
