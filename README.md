@@ -50,9 +50,9 @@ This project was inspired by @tylxr59's netgear_cm_exporter ([https://github.com
 
 5. Install the service files into /etc/systemd/system
    
-```   
+   ```   
    cp netgear-exporter.service /etc/systemd/system
-```
+   ```
 
 # Configuration
 Edit the netgear-exporter.py to adjust the password.
@@ -60,22 +60,34 @@ Edit the netgear-exporter.py to adjust the password.
 # Prometheus Configuration
 Add the following job to your Prometheus configuration (adjust localhost to the correct IP if they are not running on the same machine):
 
-```
-scrape_configs:
-  - job_name: 'netgear_modem'
-    static_configs:
-      - targets: ['localhost:8000']
-```
+   ```
+   scrape_configs:
+     - job_name: 'netgear_modem'
+       static_configs:
+         - targets: ['localhost:8000']
+   ```
 
 # Final Configuration
 
 1. Enable and Start the service
-```
-   systemctl enable netgear-exporter.service
-   systemctl start netgear-exporter.service
-```
+   ```
+   [root@grafana system]# systemctl enable netgear-exporter.service
+   Created symlink /etc/systemd/system/multi-user.target.wants/netgear-exporter.service → /etc/systemd/system/netgear-exporter.service.
+   [root@grafana system]# systemctl start netgear-exporter.service
+   ```
 
 2. Validate the service started
-```
-   systemctl status netgear-exporter.service
-```
+   ```
+   [root@grafana system]# systemctl status netgear-exporter.service
+   ● netgear-exporter.service - "Start netgear exporter after network is loaded"
+     Loaded: loaded (/etc/systemd/system/netgear-exporter.service; enabled; preset: disabled)
+     Active: active (running) since Fri 2025-03-21 09:24:19 MDT; 5s ago
+   Main PID: 580599 (python)
+      Tasks: 2 (limit: 23111)
+     Memory: 18.0M
+        CPU: 193ms
+     CGroup: /system.slice/netgear-exporter.service
+             └─580599 python /usr/bin/netgear-exporter.py
+
+   Mar 21 09:24:19 grafana systemd[1]: Started "Start netgear exporter after network is loaded".
+   ```
