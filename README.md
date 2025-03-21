@@ -30,7 +30,11 @@ This project was inspired by @tylxr59's netgear_cm_exporter ([https://github.com
    git clone https://github.com/jhgrazier/Netgear-CM2000-Prometheus-Exporter.git
    ```
 
-3. cd Netgear-CM2000-Prometheus-Exporter
+3. Change into the cloned directory
+
+   ```
+   cd Netgear-CM2000-Prometheus-Exporter
+   ```
 
 4. Install required Python requirements
    ```
