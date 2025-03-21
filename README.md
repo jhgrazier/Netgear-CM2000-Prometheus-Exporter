@@ -116,8 +116,7 @@ This project was inspired by @tylxr59's netgear_cm_exporter ([https://github.com
 
 # Dashboard
 
-<img width="1507" alt="dashboard_1" src="https://github.com/user-attachments/assets/627b885f-79e1-4726-a487-a7ce5a3c4bda" />
-
-<img width="1511" alt="dashboard_2" src="https://github.com/user-attachments/assets/8b3cbcf7-3b40-4a94-8323-9a7f33e17c63" />
-
-<img width="1510" alt="dashboard_3" src="https://github.com/user-attachments/assets/b7f356fc-c1ed-445e-b1b0-b127850f5c43" />
+  Screenshots of the Dashboard
+  <img width="1507" alt="dashboard_1" src="https://github.com/user-attachments/assets/627b885f-79e1-4726-a487-a7ce5a3c4bda" />
+  <img width="1511" alt="dashboard_2" src="https://github.com/user-attachments/assets/8b3cbcf7-3b40-4a94-8323-9a7f33e17c63" />
+  <img width="1510" alt="dashboard_3" src="https://github.com/user-attachments/assets/b7f356fc-c1ed-445e-b1b0-b127850f5c43" />
