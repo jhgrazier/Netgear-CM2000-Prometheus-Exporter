@@ -1,0 +1,257 @@
+{
+  "id": null,
+  "uid": "7d1360a7",
+  "title": "Netgear CM2000 Full Metrics View",
+  "timezone": "browser",
+  "schemaVersion": 40,
+  "version": 1,
+  "refresh": "30s",
+  "tags": [
+    "netgear",
+    "modem",
+    "exporter"
+  ],
+  "panels": [
+    {
+      "id": 1,
+      "title": "Downstream Bonded Channels",
+      "type": "table",
+      "datasource": "Prometheus",
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "targets": [
+        {
+          "expr": "modem_downstream_channel_id",
+          "refId": "D"
+        },
+        {
+          "expr": "modem_downstream_frequency",
+          "refId": "E"
+        },
+        {
+          "expr": "modem_downstream_power",
+          "refId": "F"
+        },
+        {
+          "expr": "modem_downstream_snr",
+          "refId": "G"
+        },
+        {
+          "expr": "modem_downstream_correctables",
+          "refId": "H"
+        },
+        {
+          "expr": "modem_downstream_uncorrectables",
+          "refId": "I"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "options": {
+        "showHeader": true
+      }
+    },
+    {
+      "id": 2,
+      "title": "Upstream Bonded Channels",
+      "type": "table",
+      "datasource": "Prometheus",
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 9
+      },
+      "targets": [
+        {
+          "expr": "modem_upstream_channel_id",
+          "refId": "D"
+        },
+        {
+          "expr": "modem_upstream_symbol_rate",
+          "refId": "E"
+        },
+        {
+          "expr": "modem_upstream_frequency",
+          "refId": "F"
+        },
+        {
+          "expr": "modem_upstream_power",
+          "refId": "G"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "options": {
+        "showHeader": true
+      }
+    },
+    {
+      "id": 3,
+      "title": "Downstream OFDM Channels",
+      "type": "table",
+      "datasource": "Prometheus",
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 18
+      },
+      "targets": [
+        {
+          "expr": "modem_ofdm_channel_id",
+          "refId": "D"
+        },
+        {
+          "expr": "modem_ofdm_frequency",
+          "refId": "E"
+        },
+        {
+          "expr": "modem_ofdm_power",
+          "refId": "F"
+        },
+        {
+          "expr": "modem_ofdm_snr_mer",
+          "refId": "G"
+        },
+        {
+          "expr": "modem_ofdm_active_subcarrier_number_range",
+          "refId": "H"
+        },
+        {
+          "expr": "modem_ofdm_unerrored_codewords",
+          "refId": "I"
+        },
+        {
+          "expr": "modem_ofdm_correctable_codewords",
+          "refId": "J"
+        },
+        {
+          "expr": "modem_ofdm_uncorrectable_codewords",
+          "refId": "K"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "options": {
+        "showHeader": true
+      }
+    },
+    {
+      "id": 4,
+      "title": "Upstream OFDMA Channels",
+      "type": "table",
+      "datasource": "Prometheus",
+      "gridPos": {
+        "h": 8,
+        "w": 24,
+        "x": 0,
+        "y": 27
+      },
+      "targets": [
+        {
+          "expr": "modem_ofdma_modulation_profile_id",
+          "refId": "C"
+        },
+        {
+          "expr": "modem_ofdma_channel_id",
+          "refId": "D"
+        },
+        {
+          "expr": "modem_ofdma_frequency",
+          "refId": "E"
+        },
+        {
+          "expr": "modem_ofdma_power",
+          "refId": "F"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "options": {
+        "showHeader": true
+      }
+    },
+    {
+      "type": "stat",
+      "title": "Modem Uptime",
+      "id": 5,
+      "datasource": "Prometheus",
+      "gridPos": {
+        "h": 4,
+        "w": 12,
+        "x": 0,
+        "y": 36
+      },
+      "targets": [
+        {
+          "expr": "modem_uptime",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "s"
+        }
+      }
+    },
+    {
+      "type": "stat",
+      "title": "System Time",
+      "id": 6,
+      "datasource": "Prometheus",
+      "gridPos": {
+        "h": 4,
+        "w": 12,
+        "x": 12,
+        "y": 36
+      },
+      "targets": [
+        {
+          "expr": "modem_system_time",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "dateTimeAsIso"
+        }
+      }
+    }
+  ],
+  "time": {
+    "from": "now-1h",
+    "to": "now"
+  },
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "templating": {
+    "list": []
+  }
+}
