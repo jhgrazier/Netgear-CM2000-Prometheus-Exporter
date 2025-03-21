@@ -93,3 +93,23 @@ This project was inspired by @tylxr59's netgear_cm_exporter ([https://github.com
 
    Mar 21 09:24:19 grafana systemd[1]: Started "Start netgear exporter after network is loaded".
    ```
+
+# Verify Metrics 
+
+1. Run this curl command from command line on your host where prometheus is installed.
+   ```
+   curl http://localhost:8000/metrics | grep modem_
+   ```
+
+2. You should see something like the following:
+   ```
+   modem_downstream_power{channel="2"} 2.9
+   modem_downstream_power{channel="3"} 2.9
+   modem_downstream_power{channel="4"} 2.8
+   modem_downstream_power{channel="5"} 2.9
+   modem_downstream_power{channel="6"} 2.6
+   modem_downstream_power{channel="7"} 2.8
+   modem_downstream_power{channel="8"} 3.0
+   modem_downstream_power{channel="9"} 2.8
+   modem_downstream_power{channel="10"} 2.8
+   ```
