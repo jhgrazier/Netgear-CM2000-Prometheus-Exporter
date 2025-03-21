@@ -25,18 +25,24 @@ This project was inspired by @tylxr59's netgear_cm_exporter ([https://github.com
  • re
 
 # Installation
-1. Clone the repository: 
+1. Clone the repository:
+   ```
    git clone https://github.com/jhgrazier/Netgear-CM2000-Prometheus-Exporter.git
+   ```
 
-2. cd Netgear-CM2000-Prometheus-Exporter
+3. cd Netgear-CM2000-Prometheus-Exporter
 
-3. Install required Python requirements
+4. Install required Python requirements
+   ```
    pip install prometheus_client requests time re
+   ```
 
-4. Install the service files
-```   
+6. Install the service files
    copy the service files into /etc/systemd/system
-   final location will be /etc/systemd/system/startnetgear-exporter.service
+
+   final location will be /etc/systemd/system/netgear-exporter.service
+```   
+   cp netgear-exporter.service /etc/systemd/system
 ```
 
 # Configuration
@@ -56,11 +62,11 @@ scrape_configs:
 
 1. Enable and Start the service
 ```
-   systemctl enable startnetgear-exporter.service
-   systemctl start startnetgear-exporter.service
+   systemctl enable netgear-exporter.service
+   systemctl start netgear-exporter.service
 ```
 
 3. Validate the service started
 ```
-   systemctl status startnetgear-exporter.service
+   systemctl status netgear-exporter.service
 ```
