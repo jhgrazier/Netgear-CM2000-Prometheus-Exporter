@@ -28,8 +28,10 @@ This project was inspired by @tylxr59's netgear_cm_exporter ([https://github.com
    pip install prometheus_client requests
 
 4. Install the service files
+```   
    copy the service files into /etc/systemd/system
    final location will be /etc/systemd/system/startnetgear-exporter.service
+```
 
 # Configuration
 Edit the netgear-exporter.py to adjust the password.
