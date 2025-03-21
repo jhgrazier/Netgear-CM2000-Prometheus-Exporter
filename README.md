@@ -8,14 +8,20 @@ This project was inspired by @tylxr59's netgear_cm_exporter ([https://github.com
 
 # Features
  • Scrapes modem information such as vendor, model, hardware version, serial number, MAC address, firmware version, and IPv4 address.
+ 
  • Monitors downstream and upstream channel statistics including frequency, power, SNR, and symbol rate.
+ 
  • Periodically updates metrics and exposes them to Prometheus.
 
 # Requirements
  • Python 3.x
+ 
  • requests
+ 
  • prometheus_client
+ 
  • time
+ 
  • re
 
 # Installation
