@@ -47,8 +47,12 @@ scrape_configs:
 # Final Configuration
 
 1. Enable and Start the service
+```
    systemctl enable startnetgear-exporter.service
    systemctl start startnetgear-exporter.service
+```
 
-2. Validate the service started
+3. Validate the service started
+```
    systemctl status startnetgear-exporter.service
+```
