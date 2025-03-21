@@ -44,9 +44,9 @@ This project was inspired by @tylxr59's netgear_cm_exporter ([https://github.com
 
 4. Copy the netgear-exporter.py into /usr/bin
    
-  ```
-  cp netgear-exporter.py /usr/bin
-  ```
+   ```
+   cp netgear-exporter.py /usr/bin
+   ```
 
 5. Install the service files into /etc/systemd/system
    
@@ -55,10 +55,12 @@ This project was inspired by @tylxr59's netgear_cm_exporter ([https://github.com
    ```
 
 # Configuration
-Edit the netgear-exporter.py to adjust the password.
+
+1. Edit the netgear-exporter.py to adjust the password.
 
 # Prometheus Configuration
-Add the following job to your Prometheus configuration (adjust localhost to the correct IP if they are not running on the same machine):
+
+1. Add the following job to your Prometheus configuration (adjust localhost to the correct IP if they are not running on the same machine):
 
    ```
    scrape_configs:
