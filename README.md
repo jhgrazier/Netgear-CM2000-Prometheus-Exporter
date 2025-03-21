@@ -37,14 +37,19 @@ This project was inspired by @tylxr59's netgear_cm_exporter ([https://github.com
    ```
 
 4. Install required Python requirements
+
    ```
    pip install prometheus_client requests time re
    ```
 
-6. Install the service files
-   copy the service files into /etc/systemd/system
+5. Copy the netgear-exporter.py into /usr/bin
+   
+  ```
+  cp netgear-exporter.py /usr/bin
+  ```
 
-   final location will be /etc/systemd/system/netgear-exporter.service
+7. Install the service files
+   copy the service files into /etc/systemd/system
 ```   
    cp netgear-exporter.service /etc/systemd/system
 ```
