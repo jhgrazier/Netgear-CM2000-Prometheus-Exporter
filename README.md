@@ -75,7 +75,7 @@ scrape_configs:
    systemctl start netgear-exporter.service
 ```
 
-3. Validate the service started
+2. Validate the service started
 ```
    systemctl status netgear-exporter.service
 ```
