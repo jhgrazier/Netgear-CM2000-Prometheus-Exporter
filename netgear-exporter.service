@@ -1,0 +1,10 @@
+[Unit]
+Description="Start netgear exporter after network is loaded"
+After=network.target
+[Service]
+User=root
+Group=root
+Type=simple
+ExecStart=python /usr/bin/netgear-exporter.py
+[Install]
+WantedBy=multi-user.target
